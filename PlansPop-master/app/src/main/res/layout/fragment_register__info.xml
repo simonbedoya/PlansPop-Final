@@ -1,0 +1,131 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="simon.unicauca.edu.co.planpop.Fragments.Register_InfoPFragment"
+    android:orientation="vertical"
+    >
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/txt_data_personal"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:id="@+id/text1"
+        android:layout_marginTop="@dimen/margin_medium"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="@dimen/edt_width_infop"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpln_info"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_infop">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name_infop"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_action_name_dark"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="@dimen/edt_width_infop"
+        android:layout_height="wrap_content"
+        android:id="@+id/birth_info"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/edt_fechan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_birth_infop"
+            android:inputType="date"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_action_birth_dark"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/gr_rb"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/padding_small"
+        >
+        <RadioButton
+            android:id="@+id/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_h_infop"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_infop"
+            android:textSize="@dimen/txt_size_medium"
+            android:onClick="r_button"/>
+
+        <RadioButton
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_m_infop"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:textSize="@dimen/txt_size_medium"
+            android:onClick="r_button"/>
+
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="@dimen/edt_width_infop"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_info"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true" >
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_user_infop"
+            android:inputType="text"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_action_person_dark"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="@dimen/edt_width_infop"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_info"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pass_infop"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_action_key_dark"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height_login"
+        android:text="@string/hint_create_infop"
+        android:id="@+id/btn_nextip"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/padding_small"
+        android:drawableLeft="@drawable/ic_action_add_user"/>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardElevation="@dimen/card_elavation"
+        app:contentPadding="@dimen/content_pading">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fondo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_template"/>
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:text="@string/hint_name_template"
+                android:textSize="@dimen/padding_medium"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_verySmall"
+                style="@style/AppTheme"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_lugar"
+                android:layout_alignLeft="@+id/txt_lugar"
+                android:layout_alignStart="@+id/txt_lugar"
+                android:id="@+id/linearLayout"
+                android:paddingLeft="@dimen/padding_verySmall">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/txt_fecha"
+                    android:textSize="@dimen/text_size_template"
+                    android:text="@string/hint_date_tmplate"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_action_today_white"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_alignBaseline="@+id/txt_descripcion"
+                    android:layout_alignBottom="@+id/txt_descripcion"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="@dimen/text_size_template"
+                    android:id="@+id/txt_hora"
+                    android:text="@string/hint_hour_template"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_small"
+                    android:layout_gravity="center"
+                    android:layout_alignBottom="@+id/img_fondo"
+                    android:layout_alignLeft="@+id/txt_lugar"
+                    android:layout_alignStart="@+id/txt_lugar"
+                    android:drawableLeft="@drawable/ic_action_hour"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/txt_lugar"
+                android:text="@string/hint_size_template"
+                android:paddingLeft="@dimen/padding_verySmall"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_site_white"
+                android:layout_gravity="left|bottom"
+                android:layout_below="@+id/img_fondo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/txt_descripcion"
+                android:layout_alignStart="@+id/txt_descripcion" />
+
+            <ImageView
+                android:id="@+id/img_fondo"
+                android:layout_width="@dimen/width_img_template"
+                android:layout_height="@dimen/height_img_template"
+                android:background="@drawable/img_fondo"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:id="@+id/txt_descripcion"
+                android:text="@string/hint_descrip_template"
+                android:paddingLeft="@dimen/margin_infop"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nombre"
+                android:layout_alignLeft="@+id/txt_nombre"
+                android:layout_alignStart="@+id/txt_nombre"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

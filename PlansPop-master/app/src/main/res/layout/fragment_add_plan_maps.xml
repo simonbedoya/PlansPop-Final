@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="simon.unicauca.edu.co.planpop.Fragments.AddPlanMapsFragment">
+
+    <LinearLayout
+        android:id="@+id/linearAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/edit_buscarMaps_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_search"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_size_medium"/>
+        <Button
+            style="@style/Button_small"
+            android:id="@+id/btn_buscar_mapaMaps_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_search"
+            />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/mapaAdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/linearAdd"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/big_dimen"
+    android:paddingRight="@dimen/big_dimen"
+    android:paddingTop="@dimen/big_dimen"
+    android:paddingBottom="@dimen/big_dimen"
+    tools:context="simon.unicauca.edu.co.planpop.Fragments.FotoPlanFragment">
+
+
+    <ImageView
+        android:id="@+id/img_fotoPlan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_medium"
+        android:src="@drawable/ic_camera"
+        />
+
+    <Button
+        android:id="@+id/btn_tomarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomar Foto"
+        android:padding="@dimen/padding_medium"
+        android:background="@color/transparente"/>
+    <Button
+        android:id="@+id/btn_elegirFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir Foto"
+        android:padding="@dimen/padding_medium"
+        android:background="@color/transparente"/>
+
+    <Button
+        android:id="@+id/btn_siguienteFotoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorText"/>
+
+
+</LinearLayout>

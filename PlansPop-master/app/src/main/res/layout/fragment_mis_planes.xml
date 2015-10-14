@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frank.panspop.fragments.MisPlanesFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linear_sinPLanes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fondo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="¿Qué quieres hacer?"
+            android:textColor="@color/colorText"/>
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Compartelo"
+            android:textColor="@color/colorText"/>
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agrega un plan"
+            android:textColor="@color/colorText"/>
+        <ImageView
+            android:id="@+id/img_agregarPlan"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_add"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_conPlanes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ListView
+            android:id="@+id/mis_planes_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            />
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_height"
+        android:id="@+id/img_profile"
+        android:src="@drawable/perfil"
+        android:padding="@dimen/padding_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liner_nombre"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:paddingLeft="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/padding_medium">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/name"
+           android:text="@string/profile_name"
+           style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:layout_width="@dimen/profile_edt"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_name"
+            android:layout_marginTop="@dimen/margin_very_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:hint="@string/profile_compl_name"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/txt_size_medium"
+            android:padding="@dimen/padding_very_very_small"
+            android:enabled="false"
+            android:focusable="false"
+            android:inputType="textAutoCorrect"/>
+            <requestFocus/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liner_correo"
+        android:paddingLeft="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_verySmall">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text="@string/profile_email"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+        <TextView
+            android:layout_width="@dimen/profile_edt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_very_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:id="@+id/profile_email"
+            android:hint="@string/hint_email_profile"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/txt_size_medium"
+            android:padding="@dimen/padding_very_v_small"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/liner_username"
+    android:paddingLeft="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/padding_medium"
+    android:layout_marginTop="@dimen/padding_verySmall">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="@string/profile_user"
+        style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+    <EditText
+        android:layout_width="@dimen/profile_edt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_very_small"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:id="@+id/profile_username"
+        android:hint="@string/hint_user_profile"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textSize="@dimen/txt_size_medium"
+        android:padding="@dimen/padding_very_very_small"
+        android:enabled="false"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liner_sex"
+        android:paddingLeft="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_verySmall">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex"
+            android:text="@string/profile_sex"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:layout_width="@dimen/profile_edt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_very_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:id="@+id/profile_sex"
+            android:hint="@string/hint_sex_profile"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/txt_size_medium"
+            android:padding="@dimen/padding_very_very_small"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liner_birthdate"
+        android:paddingLeft="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_verySmall">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdate"
+            android:text="@string/profile_birth"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:layout_width="@dimen/profile_edt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_very_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:id="@+id/profile_birthdate"
+            android:hint="@string/hint_birth_profile"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/txt_size_medium"
+            android:padding="@dimen/padding_very_very_small"
+            android:enabled="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="simon.unicauca.edu.co.planpop.Fragments.VerMisPlanesFragment">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:id="@+id/txt_Nombre_verMisPlanes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_hint_lisp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding_medium"/>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/btn_ActualizarInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:text="@string/hint_update_misp"
+        android:layout_gravity="center"/>
+    <Button
+        style="@style/Button"
+        android:id="@+id/btn_editarLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:text="@string/hint_edit_misp"
+        android:layout_gravity="center"/>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/btn_Eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="#ff0000"
+        android:text="@string/hint_delete_misp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

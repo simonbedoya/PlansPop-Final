@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="simon.unicauca.edu.co.planpop.RemPassActivity"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_pass"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_big"
+        android:layout_margin="@dimen/margin_medium"/>
+
+    <TextView
+        android:layout_width="@dimen/remember_edt_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/padding_medium"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text="@string/text_remember_pass"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_rem_email"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/emailr"
+            android:layout_width="@dimen/remember_email_edt"
+            android:layout_height="wrap_content"
+            android:hint="@string/remember_email"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_action_mail_dark"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        style="@style/Button"
+        android:layout_width="@dimen/button_login_width"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_height="@dimen/button_height_login"
+        android:id="@+id/btn_rem"
+        android:layout_gravity="center"
+        android:text="@string/remember_request"
+        android:drawableLeft="@drawable/ic_action_send_white"/>
+
+</LinearLayout>

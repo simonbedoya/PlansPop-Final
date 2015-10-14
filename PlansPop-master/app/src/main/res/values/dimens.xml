@@ -1,0 +1,45 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="big_dimen">20dp</dimen>
+    <dimen name="smaller">2dp</dimen>
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_verySmall">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="img_login_width">150dp</dimen>
+    <dimen name="size_edt">250dp</dimen>
+    <dimen name="height_edt">45dp</dimen>
+    <dimen name="margin_medium">30dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="profile_height">170dp</dimen>
+    <dimen name="profile_edt">300dp</dimen>
+    <dimen name="margin_very_small">3dp</dimen>
+    <dimen name="txt_size_medium">18sp</dimen>
+    <dimen name="padding_very_very_small">1dp</dimen>
+    <dimen name="padding_very_v_small">4dp</dimen>
+    <dimen name="text_size_big">25sp</dimen>
+    <dimen name="remember_edt_width">280dp</dimen>
+    <dimen name="remember_email_edt">340dp</dimen>
+    <dimen name="button_send_rem">200dp</dimen>
+    <dimen name="padding_login">8dp</dimen>
+    <dimen name="button_login_width">200dp</dimen>
+    <dimen name="button_height_login">35dp</dimen>
+    <dimen name="button_height_small">20dp</dimen>
+    <dimen name="button_width_small">80dp</dimen>
+    <dimen name="text_medium">15sp</dimen>
+    <dimen name="img_plan">150dp</dimen>
+    <dimen name="heigth_layout">200dp</dimen>
+    <dimen name="edt_width_infop">320dp</dimen>
+    <dimen name="margin_infop">15dp</dimen>
+    <dimen name="text_size_info">16sp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="card_elavation">8dp</dimen>
+    <dimen name="content_pading">8dp</dimen>
+    <dimen name="height_template">140dp</dimen>
+    <dimen name="text_size_template">13sp</dimen>
+    <dimen name="width_img_template">100dp</dimen>
+    <dimen name="height_img_template">110dp</dimen>
+</resources>

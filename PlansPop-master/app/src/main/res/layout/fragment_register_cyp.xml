@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="simon.unicauca.edu.co.planpop.Fragments.Register_cypFragment">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/title_cp"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:id="@+id/text1"
+        android:layout_margin="@dimen/padding_medium"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/txt2_cp"
+        android:gravity="center"
+        android:id="@+id/text2"
+        android:layout_below="@id/text1"
+        android:layout_margin="@dimen/padding_medium"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textSize="@dimen/text_size_info"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt3_cp"
+        android:layout_margin="@dimen/padding_medium"
+        android:id="@+id/text3"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/TextAppearance.AppCompat.Body2"/>
+
+    <Button
+        style="@style/Button"
+        android:layout_width="@dimen/button_login_width"
+        android:layout_height="@dimen/button_height_login"
+        android:layout_gravity="center"
+        android:text="@string/text_next"
+        android:id="@+id/btn_nextcyp"
+        android:layout_below="@id/text3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/padding_medium"
+        android:drawableRight="@drawable/ic_action_next_white"/>
+
+</RelativeLayout>
